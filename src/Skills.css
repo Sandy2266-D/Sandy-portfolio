@@ -1,0 +1,171 @@
+.about{
+    background: #191919;
+}
+img.about__img{
+    border-radius: 10x;
+    width: 100%;
+}
+
+
+h1.about__heading{
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: start;
+    font-family: Montserrat,sans-serif;
+    font-size: 60px;
+}
+button.about.btn.pointer {
+    text-transform: capitalize;
+    width: 165px;
+    height: 55px;
+    font-size: 14px;
+    transition: .4s ease;
+}
+.about__button{
+    padding: 10px 0px;
+}
+a.bottom__to__top{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    background-color: #F9004D;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: .4s all ease;
+    z-index: 1000;
+}
+a.bottom__to__top.active{
+    display: flex;
+}
+/* .skillContainer{
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    margin: 100px 0;
+    background-color: lightgray;
+} */ */
+
+.skillContainer_text{
+    color: black;
+    text-align: right;
+    max-width: 500px;
+    margin-bottom: 50px;
+    }
+
+.skillContainer_text >h2{
+font-size: 20px;
+padding-bottom: 20px;
+}
+
+.skillContainer_skillSet > h5{
+font-family: "Montserrat",sans-serif;
+font-weight: 300;   
+padding-bottom: 20px;
+padding-top: 10px;
+}
+
+/* .skillContainer_slider > .MuiLinearProgress-colorPrimary{
+background-color: rgb(88,88,88)
+}
+
+.skills{
+    margin-top: auto;
+    margin-right: 5px;
+    margin-left: 100;
+    font-weight: 700;
+    align-items: center;
+   
+}
+
+.skillContainer_slider1 > div > .MuiLinearProgress-barColorPrimary{
+    background-color: #8B3200;
+}
+
+.skillContainer_slider2 > div > .MuiLinearProgress-barColorPrimary{
+    background-color: #DE8600;
+}
+
+.skillContainer_slider3 > div > .MuiLinearProgress-barColorPrimary{
+    background-color: #889200;
+}
+
+.skillContainer_slider4 > div > .MuiLinearProgress-barColorPrimary{
+    background-color: #8E1692;
+    
+} */
+
+.about__me{
+    margin-top: 30px;
+    margin-bottom: 40px;;
+}
+
+.what__do{
+    margin-top: 40px;
+}
+
+/* .skillContainer_text{
+    margin: 100;
+    padding: 30px
+} */
+
+.experience{
+    margin-top: 40px;
+}
+
+
+.resumeCodingSkillContainer{
+    margin-bottom: 20px;
+}
+
+.resumeCodingSkill{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2px;
+}
+
+.skillWidthContainer{
+    width: 100%;
+    height: 10px;
+    border: 0.5px solid gray;
+    border-radius: 15px;
+}
+
+.codingPercent{
+    color: gray;
+}
+
+.skillWidth{
+    background-color: #0d6efd;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.image{
+    width: 20px;
+    height: 20px;
+    /* border-radius: 100%; */
+    object-fit: cover;
+  
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1024px){
+    .p__color{
+        font-size: 15px!important;
+    }
+}
+@media only screen and (max-width: 425px){
+button.about.btn.pointer {
+    text-transform: capitalize;
+    width: 165px;
+    height: 50px;
+    font-size: 13px;
+    transition: .4s ease;
+}
+}

@@ -1,0 +1,266 @@
+#portfolio{
+    background-color: #191919;
+    width: 100%;
+    height: auto/* 100vh 72px*/;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding : 2rem;
+    padding-top: 2; /* added  */
+    color: white;
+}
+
+#portfolio h1{
+    color: #fff;
+    font-size: 40px;
+    text-align:center;
+    padding-top: 3rem; 
+    padding-bottom: 2rem;
+   
+}
+.allProjects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bottom{
+  
+    background-color: black;
+}
+.card{
+    width: 22rem /* 32rem - small card edit */;
+    position: relative;
+    height: 25rem;
+    margin-bottom: 2rem;
+    
+}
+
+.card img{
+    display: block;
+    width: 100%;
+    height: 23rem;
+}
+
+
+.project{
+    background-color: #191919;
+}
+
+.heading__top{
+    margin-top: 10px;
+}
+
+.heading{
+  text-align: center;
+}
+
+img.project__img {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+    transition: .4s;
+    opacity: .7;
+    position: relative;
+    display: block;
+}
+
+img.project__img::after{
+    content: '';
+    width: 100%;
+    height: 1200%;
+    background-color: #000;
+    z-index: 1;
+    opacity: 1;
+}
+
+.project__meta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 92%;
+    background: rgba(0, 0, 0, 0.6);
+    /* color: #ffffff; */
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    
+}
+
+/* .title_heading{
+    background-color: rgb(27, 27, 27);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 4.89rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.card-title{
+    margin-bottom: 0;
+}
+
+.img-description {
+    font-size: 1em;
+    margin-top: 0.25em;
+    margin-left: 9px;
+}
+
+
+/* Hoovering */
+.project__meta:hover{
+opacity: 1;
+}
+.project__meta:hover > *{
+    /* display: inline;
+    transform: scale(1.1); */
+    transform: translateY(20px);
+    transition: transform 0.25s;
+    
+ }
+
+ .project__meta > *{
+  /* display: inline;
+  transform: scale(1.1); */
+  transform: translateY(20px);
+  transition: transform 0.25s;
+  
+}
+ .project__box:hover img.project__img{
+     transform: scale(1.1);
+ }
+
+
+
+h5.project__text {
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 20px;
+    
+}
+
+h4.project__text {
+    font-size: 22px;
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+    padding-bottom: 10px;
+
+}
+a.project__btn {
+    padding: 3px 3px;
+    border: 1px solid #ffffff87;
+    border-radius: 4px;
+    transition: .4s ease;
+    
+}
+a.project__btn:hover{
+    background-color: #f9004d;
+    border: 2px solid #f9004d;
+}
+button.btn {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid #f9004d;
+    background-color: #f9004d;
+    color: #fff!important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .4s all ease;
+}
+button.view__more:hover{
+    background-color: #fff;
+    border: 2px solid #f9004d;
+    color: #f9004d!important;
+}
+
+.react1{
+  color: lightblue
+}
+
+.react{
+  color: skyblue;   
+}
+
+.react2{
+  color: lightblue
+}
+
+.react3{
+  color: darkblue;
+}
+.node{
+  color: green
+}
+
+.express{
+  color: rgba(0,0,0);
+}
+
+.tech_used{
+  text-align: center;
+  font-size: 2rem;
+}
+.fab{
+    padding-left: 10px;
+  }
+  .git{
+      padding-left: 2px;
+  }
+  
+.mongodb{
+  color: green;
+}
+.codeLinks{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer{
+  text-align: center;
+  font-size: 10px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1024px){
+    h5.project__text {
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+#portfolio{
+    padding:2.5rem 1rem ;
+}
+h4.project__text {
+    font-size: 18px;
+}
+
+/* .react{
+  color: darkblue;   
+}
+.node{
+  color: rgb(6, 153, 6);
+} */
+.tech_used{
+  text-align: center;
+  font-size: 2rem;
+}
+.mongodb{
+  color: green;
+}
+.codeLinks{
+  display: flex;
+  justify-content: space-around;
+}
+.footer{
+  text-align: center;
+  font-size: 10px;
+}
+}
+

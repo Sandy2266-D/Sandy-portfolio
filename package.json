@@ -1,34 +1,50 @@
 {
-  "name": "ecom-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "cilent": "cd cilent  && npm  run start",
-    "server-install": "npm install",
-    "cilent-install": "cd cilent && npm install",
-    "install-all": "concurrently \"npm run server-install\" \"npm run cilent-install\"",
-    "dev": "concurrently \"npm run server\" \"npm run cilent\"",
-    "heroku-postbuild": "cd cilent && npm install && npm run build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "cilent",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "bcrypt": "^5.0.0",
-    "cloudinary": "^1.23.0",
-    "concurrently": "^5.3.0",
-    "cookie-parser": "^1.4.5",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-fileupload": "^1.2.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.10.1"
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "emailjs": "^3.7.0",
+    "emailjs-com": "^3.2.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.4",
+    "react-simple-typewriter": "^3.0.1",
+    "react-typical": "^0.1.3",
+    "styled-components": "^5.3.3",
+    "typewriter-effect": "^2.18.2",
+    "web-vitals": "^1.1.2"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
